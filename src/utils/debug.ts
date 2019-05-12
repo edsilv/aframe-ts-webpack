@@ -1,4 +1,4 @@
-import { debug as debugLib } from 'debug';
+var debugLib = require('debug');
 var extend = require('object-assign');
 
 var settings = {

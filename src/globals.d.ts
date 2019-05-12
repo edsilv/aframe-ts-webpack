@@ -9,7 +9,6 @@ declare global {
     }
 
     interface Document {
-        // todo: can this be changed to customElements.define()? https://developer.mozilla.org/en-US/docs/Web/API/Document/registerElement
         registerElement: (tag: string, options: any) => HTMLElement; 
     }
 

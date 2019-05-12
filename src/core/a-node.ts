@@ -1,7 +1,7 @@
 /* global CustomEvent */
 import { registerElement } from './a-register-element';
 import { isNode } from './a-register-element';
-import { utils } from '../utils/';
+import { utils } from '../../utils';
 
 var warn = utils.debug('core:a-node:warn');
 var error = utils.debug('core:a-node:error');
@@ -12,7 +12,7 @@ var error = utils.debug('core:a-node:error');
  * Nodes can be modified using mixins.
  * Nodes emit a `loaded` event when they and their children have initialized.
  */
-module.exports = registerElement('a-node', {
+export default registerElement('a-node', {
   prototype: Object.create(window.HTMLElement.prototype, {
     createdCallback: {
       value: function () {
