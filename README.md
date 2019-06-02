@@ -16,6 +16,14 @@ Uses `dts-bundle-generator` to generate a _single_ namespaced type definition.
 
 Generates documentation using `typedoc` from code comments.
 
+Tested in:
+
+ - IE11
+ - Chrome (macOS High Sierra/windows 10)
+ - Safari (macOS High Sierra)
+ - Firefox (macOS High Sierra/windows 10)
+ - Edge
+
 ## examples
 
     npm run examples
