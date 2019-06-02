@@ -1,8 +1,8 @@
 {
-  "name": "aframe",
-  "version": "0.0.1",
-  "description": "",
-  "main": "./dist-esmodule/index.js",
+  "name": "@edsilv/aframe",
+  "version": "0.0.1-pre.1",
+  "description": "An experiment to see if it's possible to update A-Frame to use webpack, esmodules, types (via TypeScript), and custom elements v1.",
+  "main": "./dist-umd/aframe.js",
   "types": "./types/index.d.ts",
   "scripts": {
     "lint": "prettier --write \"./src/**/*.{js,jsx,json,css,ts,tsx}\" \"!./src/assets/* \"",
@@ -15,7 +15,8 @@
     "build:docs": "rimraf -rf docs && typedoc --out docs --name AFRAME --theme default --ignoreCompilerErrors --experimentalDecorators --emitDecoratorMetadata --target ES6 --moduleResolution node --preserveConstEnums --stripInternal --suppressExcessPropertyErrors --suppressImplicitAnyIndexErrors --module commonjs src/ && echo> docs/.nojekyll",
     "build": "npm run lint && npm run clean && npm run build:commonjs && npm run build:esmodule && npm run build:umd && npm run build:var && npm run build:types && npm run build:docs",
     "prepublishOnly": "npm run build",
-    "examples": "npx serve -c 0 -o"
+    "examples": "npx serve -c 0 -o",
+    "netlify": "netlify deploy --dir=examples --prod"
   },
   "repository": {
     "type": "git",

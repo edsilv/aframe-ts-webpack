@@ -1,5 +1,9 @@
 # aframe-ts-webpack
 
+Demo: https://aframe-ts-webpack.netlify.com
+
+Docs: https://edsilv.github.io/aframe-ts-webpack
+
 An experiment to see if it's possible to update A-Frame to use webpack, esmodules, types (via TypeScript), and custom elements v1.
 
 Creates commonsjs, esmodule, UMD, and var dist builds. UMD would be the conventional method of use, i.e. `window.AFRAME`. 

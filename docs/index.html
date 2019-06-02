@@ -66,16 +66,17 @@
 			<div class="tsd-panel tsd-typography">
 				<h1 id="aframe-ts-webpack">aframe-ts-webpack</h1>
 				<p>An experiment to see if it&#39;s possible to update A-Frame to use webpack, esmodules, types (via TypeScript), and custom elements v1.</p>
-				<p>Creates commonsjs, esmodule, UMD, and var dist builds. UMD would be the method most people use i.e. <code>window.AFRAME</code>. </p>
-				<p>Transpiles TypeScript to es5. Includes <code>@webcomponents/custom-elements/custom-elements</code> (16k) and <code>@webcomponents/webcomponentsjs/custom-elements-es5-adapter</code> (1.3k) polyfills for non-evergreen browsers (tested in IE11).</p>
-				<p>Development can use es6 class syntax with <em>optional</em> typing. Any js file is a valid ts file.</p>
+				<p>Creates commonsjs, esmodule, UMD, and var dist builds. UMD would be the conventional method of use, i.e. <code>window.AFRAME</code>. </p>
+				<p>Transpiles TypeScript to es5. Includes <code>@webcomponents/custom-elements/custom-elements</code> (16k) and <code>@webcomponents/webcomponentsjs/custom-elements-es5-adapter</code> (1.3k) polyfills (tested in IE11). <code>custom-elements-es5-adapter</code> is necessary for <em>modern browsers</em> using custom elements transpiled to es5. Eventually when browsers are all &quot;modern&quot; we can change the tsconfig to <code>&quot;target&quot;: &quot;es6&quot;</code> without needing to change anything else.</p>
+				<p>es6 class syntax with <em>optional</em> static typing can be used for development. Any plain js file is a valid ts file.</p>
 				<p>Uses <code>dts-bundle-generator</code> to generate a <em>single</em> namespaced type definition.</p>
 				<p>Generates documentation using <code>typedoc</code> from code comments.</p>
 				<h2 id="examples">examples</h2>
 				<pre><code>npm <span class="hljs-keyword">run</span><span class="bash"> examples</span></code></pre><h2 id="todo">todo</h2>
 				<ul>
 					<li><input checked="" disabled="" type="checkbox"> Set up TypeScript and webpack with UMD, esmodule, commonjs, and var dist builds</li>
-					<li><input checked="" disabled="" type="checkbox"> Generate type definitions on build</li>
+					<li><input checked="" disabled="" type="checkbox"> Generate type definition on build</li>
+					<li><input checked="" disabled="" type="checkbox"> Format with prettier on build</li>
 					<li><input checked="" disabled="" type="checkbox"> Generate documentation on build</li>
 					<li><input checked="" disabled="" type="checkbox"> Bare-bones <code>a-scene</code>, <code>a-entity</code>, <code>a-node</code> using <code>customElements.define()</code> console logging <code>connectedCallback</code></li>
 					<li><input checked="" disabled="" type="checkbox"> <code>AFRAME.utils.isIE11</code> example</li>
