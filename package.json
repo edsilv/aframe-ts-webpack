@@ -16,7 +16,7 @@
     "build": "npm run lint && npm run clean && npm run build:commonjs && npm run build:esmodule && npm run build:umd && npm run build:var && npm run build:types && npm run build:docs",
     "prepublishOnly": "npm run build",
     "examples": "npx serve -c 0 -o",
-    "netlify": "netlify deploy --dir=examples --prod"
+    "netlify": "netlify deploy --dir=./examples --prod"
   },
   "repository": {
     "type": "git",
