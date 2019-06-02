@@ -13,14 +13,11 @@
         "noUnusedLocals": true,
         "noUnusedParameters": false,
         "outDir": "dist-commonjs",
-        "skipLibCheck": true,
+        "skipLibCheck": false,
         "sourceMap": true,
         "strictNullChecks": true,
         "suppressImplicitAnyIndexErrors": true,
-        "target": "es5",
-        "types": [
-            "node"
-        ]
+        "target": "es5"
     },
     "include": [
         "src/**/*"
