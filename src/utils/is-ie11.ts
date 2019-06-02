@@ -1,6 +1,5 @@
-// https://stackoverflow.com/a/17907562
 /**
- * Check if using IE11
+ * Check if using IE11: https://stackoverflow.com/a/17907562
  */
 function getInternetExplorerVersion() {
   var version = -1;
