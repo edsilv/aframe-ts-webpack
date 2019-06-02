@@ -8,7 +8,9 @@ An experiment to see if it's possible to update A-Frame to use webpack, esmodule
 
 Creates commonsjs, esmodule, UMD, and var dist builds. UMD would be the conventional method of use, i.e. `window.AFRAME`. 
 
-Transpiles TypeScript to es5. Includes `@webcomponents/custom-elements/custom-elements` (16k) and `@webcomponents/webcomponentsjs/custom-elements-es5-adapter` (1.3k) polyfills (tested in IE11). `custom-elements-es5-adapter` is necessary for _modern browsers_ using custom elements transpiled to es5. Eventually when browsers are all "modern" we can change the tsconfig to `"target": "es6"` without needing to change anything else. 
+Transpiles TypeScript to es5. Includes `@webcomponents/custom-elements/custom-elements` (16k) and `@webcomponents/webcomponentsjs/custom-elements-es5-adapter` (1.3k) polyfills.
+
+`custom-elements-es5-adapter` is necessary for _modern browsers_ using custom elements transpiled to es5. Eventually when browsers are all "modern" we can change the tsconfig to `"target": "es6"` and remove this polyfill. 
 
 es6 class syntax with _optional_ static typing can be used for development. Any plain js file is a valid ts file.
 
