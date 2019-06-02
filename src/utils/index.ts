@@ -1,6 +1,5 @@
-import {isIE11} from "./is-ie11";
+import { isIE11 } from "./is-ie11";
 
 export class utils {
-    static isIE11: boolean = isIE11;
+  static isIE11: boolean = isIE11;
 }
-
