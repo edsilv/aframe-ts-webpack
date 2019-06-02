@@ -3,7 +3,6 @@ export class ANode extends HTMLElement {
     self = super();
     console.log("ANode constructed");
     return self;
-    //return Reflect.construct(HTMLElement, [], this.constructor);
   }
 
   connectedCallback() {
