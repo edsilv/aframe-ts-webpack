@@ -20,11 +20,11 @@ Generates documentation using `typedoc` from code comments.
 
 Tested in:
 
- - IE11
+ - IE11 (windows 10)
  - Chrome (macOS High Sierra/windows 10)
  - Safari (macOS High Sierra)
  - Firefox (macOS High Sierra/windows 10)
- - Edge
+ - Edge (windows 10)
 
 ## examples
 
