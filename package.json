@@ -43,7 +43,7 @@
     "typescript": "3.5.1",
     "typescript-tslint-plugin": "^0.4.0",
     "webpack": "4.28.3",
-    "webpack-cli": "3.1.2"
+    "webpack-cli": "3.3.12"
   },
   "dependencies": {
     "@types/three": "0.93.30",
